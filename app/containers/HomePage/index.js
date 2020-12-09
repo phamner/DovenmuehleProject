@@ -8,11 +8,17 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import Input from './Input';
 
 export default function HomePage() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <div>
+      <h1>
+        <FormattedMessage {...messages.header} />
+        HELLO WORLD FROM app/containers/homepage/index.js
+      </h1>
+      <Input></Input>
+      <button onClick={() => {console.log('click click bruh')}}>Click to see results</button>
+    </div>
   );
 }
